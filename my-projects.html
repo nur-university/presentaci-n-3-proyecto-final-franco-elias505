@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - CrowdSpark</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   
+    <header class="header">
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <a href="index.html" class="logo">
+            <img src="img/Logo1.png" alt="CrowdSpark" class="logo-icon">
+            <span>CrowdSpark</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="explore-projects.html" class="nav-link">
+                <i class="fas fa-compass"></i>
+                <span>Explore Projects</span>
+            </a>
+            <a href="register.html" class="nav-link">
+                <i class="fas fa-user-plus"></i>
+                <span>Register</span>
+            </a>
+            <a href="login.html" class="nav-link">
+                <i class="fas fa-sign-in-alt"></i>
+                <span>Login</span>
+            </a>
+            <a href="my-projects.html" class="nav-link active">
+                <i class="fas fa-folder"></i>
+                <span>My Projects</span>
+            </a>
+            <a href="saved-projects.html" class="nav-link">
+                <i class="fas fa-star"></i>
+                <span>Saved Projects</span>
+            </a>
+            <a href="my-contributions.html" class="nav-link">
+                <i class="fas fa-wallet"></i>
+                <span>My Contributions</span>
+            </a>
+            <a href="admin-review.html" class="nav-link">
+                <i class="fas fa-shield-alt"></i>
+                <span>Admin Dashboard</span>
+            </a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="hero-title">My Projects</h1>
+        
+        <div class="my-projects-list">
+            <!-- Project 1: Solar for Schools -->
+            <div class="my-project-card">
+                <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=400&h=400&fit=crop" alt="Solar for Schools" class="my-project-image">
+                <div class="my-project-info">
+                    <h3 class="my-project-title">Solar for Schools</h3>
+                    <p>Status: <span class="status-badge status-published">Publicado</span></p>
+                </div>
+                <div class="my-project-actions">
+                    <button class="btn btn-secondary">Edit</button>
+                    <button class="btn btn-outline">Delete</button>
+                    <a href="project-contributions.html" class="btn btn-secondary">View Contributions</a>
+                    <button class="btn btn-primary">Pause Campaign</button>
+                </div>
+            </div>
+
+           
+            <div class="my-project-card">
+                <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=400&fit=crop" alt="Community Mural" class="my-project-image">
+                <div class="my-project-info">
+                    <h3 class="my-project-title">Community Mural</h3>
+                    <p>Status: <span class="status-badge status-review">En Revisión</span></p>
+                </div>
+                <div class="my-project-actions">
+                    <button class="btn btn-secondary">Edit</button>
+                    <button class="btn btn-outline">Delete</button>
+                    <button class="btn btn-outline">Start Campaign</button>
+                </div>
+            </div>
+
+            
+            <div class="my-project-card">
+                <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=400&fit=crop" alt="Eco Bottle" class="my-project-image">
+                <div class="my-project-info">
+                    <h3 class="my-project-title">Eco Bottle</h3>
+                    <p>Status: <span class="status-badge status-published">Publicado</span></p>
+                </div>
+                <div class="my-project-actions">
+                    <button class="btn btn-secondary">Edit</button>
+                    <button class="btn btn-outline">Delete</button>
+                    <a href="#" class="btn btn-secondary">View Contributions</a>
+                    <button class="btn btn-primary">Pause Campaign</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menuToggle')?.addEventListener('click', function() {
+            document.getElementById('navLinks')?.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
